@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Date</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: url('1906.i126.011_gift present romantic love illustration.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            font-size: 80px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+        }
+         #btn{
+            position: absolute;
+            top: 280px;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+         }
+    </style>
+</head>
+<body>
+    <h1 class="title">Proposal</h1>
+    <button type="button" onclick="propose()" id="btn">Open Me</button>
+    <script>
+        function propose(){
+          let answer = document.getElementById("btn").value;
+          answer = prompt("Hey Hussaina,I've really enjoyed our conversations lately, and I was thinking it would be nice to spend some more time together outside. Would you be interested in grabbing a coffee with me sometime? I'd love to chat more over a latte or whatever your favorite drink is.No pressure, though! Let me know what you think.     (Type 'yes' or 'no')");
+          if(answer === "yes"){
+            alert("Great! I'm really looking forward to it");
+          }
+          else if(answer === "no"){
+            alert("Sochle baar baar moko ni mile!")
+          }
+          else{
+            alert("Invalid answer type yes or no ");
+          }
+        }
+    </script>
+</body>
+</html>
